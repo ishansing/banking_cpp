@@ -1,6 +1,6 @@
 #include <fstream>
 #include <iostream>
-// #include <openssl/sha.h>
+#include <openssl/sha.h>
 #include <sstream>
 #include <vector>
 
@@ -185,7 +185,7 @@ int main() {
 
   int choice = 0;
   std::cout << "***********************************************\n";
-  std::cout << "           WELCOME TO BOKADOSA BANK\n";
+  std::cout << "           WELCOME TO VITB BANK\n";
   std::cout << "***********************************************\n";
   std::cout << "1. Sign Up\n";
   std::cout << "2. Login\n";
@@ -211,15 +211,15 @@ int main() {
     std::cout << "***********************************************\n";
     std::cout << "Login successful! Welcome, " << user.name << "!\n";
     std::cout << "***********************************************\n";
-    int choice, amount;
+    int n, amount;
     while (true) {
       std::cout << "*********************MENU*********************";
       std::cout
           << "\n1. Deposit\n2. Withdraw\n3. Show Balance\n4. Exit\nChoose "
              "an option: ";
-      std::cin >> choice;
+      std::cin >> n;
 
-      switch (choice) {
+      switch (n) {
       case 1:
         std::cout << "Enter deposit amount: ";
         std::cin >> amount;
